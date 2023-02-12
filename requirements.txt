@@ -20,3 +20,4 @@ wget
 wandb
 matplotlib
 librosa
+pytorch_lightning

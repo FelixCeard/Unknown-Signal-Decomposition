@@ -49,7 +49,7 @@ def main():
 
         # unzip
         print('unziping...')
-        with zipfile.ZipFile(r"C:\Users\felix\Downloads\musdb18hq.zip", 'r') as zip_ref:
+        with zipfile.ZipFile(r"musdb18hq.zip", 'r') as zip_ref:
             for member in tqdm(zip_ref.infolist(), desc='[Unzipping]'):
                 try:
                     zip_ref.extract(member, './dataset/MUSDBhq')
