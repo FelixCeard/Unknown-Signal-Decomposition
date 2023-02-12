@@ -36,7 +36,7 @@ class DownloadProgressBar(tqdm):
         self.update(100 * current / total)
 
 
-if __name__ == '__main__':
+def main():
     # download the dataset
     if not os.path.exists('./dataset/MUSDBhq'):
         print('downloading the data...')
@@ -189,3 +189,7 @@ if __name__ == '__main__':
 
         # save_best_model
         torch.save(vae, os.path.join('./weights', f'epoch_{epoch}.pt'))
+
+
+if __name__ == '__main__':
+    main()
