@@ -25,6 +25,8 @@ try:
 except ImportError:
     from yaml import Loader, Dumper
 
+
+sys.path.insert(0, os.path.join(sys.path[0], './taming-transformers'))
 sys.path.insert(0, './taming-transformers')
 from taming.models.vqgan import VQModel
 
