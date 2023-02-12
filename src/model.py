@@ -500,3 +500,7 @@ class Demucs(nn.Module):
                     if old in state and new not in state:
                         state[new] = state.pop(old)
         super().load_state_dict(state, strict=strict)
+
+
+def say():
+    print('C')
