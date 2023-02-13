@@ -39,6 +39,10 @@ class DownloadProgressBar(tqdm):
 
 
 def main():
+    # change relativ working directory
+    google_colab_relativ_path = 'Unknown-Signal-Decomposition'
+    os.chdir(os.path.join(os.getcwd(), google_colab_relativ_path, 'src'))
+
     # download the dataset
     if not os.path.exists('./dataset/MUSDBhq'):
         print('downloading the data...')
